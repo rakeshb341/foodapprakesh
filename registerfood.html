@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Food</title>
+	<style>
+		.homebtn{
+			margin-left: 250px;
+			width: 120px;
+			height: 30px;
+			color: white;
+			background-color: green;
+			border: none;
+			outline: none;
+			border-radius: 5px;
+			margin-bottom: 15px;
+		}
+		.homa{
+			text-decoration: none;
+			color: white;
+		}
+		input{
+			margin-left: 250px;
+			margin-bottom: 5px;
+			height: 25px;
+			border-radius: 5px;
+			outline: none;
+			border: 1px solid #567878;
+		}
+		.addbtn{
+			margin-left: 250px;
+			width: 120px;
+			height: 30px;
+			color: white;
+			background-color: blue;
+			border: none;
+			outline: none;
+			border-radius: 5px;
+
+		}
+		.logout{
+			margin-left: 250px;
+			width: 120px;
+			height: 30px;
+			color: white;
+			background-color: red;
+			border: none;
+			outline: none;
+			border-radius: 5px;
+
+		}
+	</style>
+</head>
+<body>
+	
+		<div style="height: 50px; background-color: #879008;padding-top: 20px;">
+			<button class="homebtn"><a href="/home" class="homa" >Home</a></button>
+			<button class="logout"><a href="/logout" class="homa"  >Logout</a></button>
+		</div>
+	<div style="margin-left:200px;margin-top: 30px;">
+	<form action="/addfood" enctype="multipart/form-data" method="post">
+		<input type="text" required name="name" placeholder="Food name"><br>
+		<input type="text" required name="people" placeholder="number of people can eat"><br>
+		<input type="number" required name="price" placeholder="price"><br>
+		<input type="text" required name="remarks" placeholder="remarks"><br>
+		<input type="text" required name="location" placeholder="location"><br>
+		<select name="delivery" style="margin-left:250px">
+			<option>Take away</option>
+			<option>Home Delivery</option>
+		</select><br>
+		<!-- <input type="file" required name="image"> -->
+		<label for='file' style="margin-left: 250px;">Select your image:</label>
+		<input type='file' accept='image/*' style="margin-left:0" name='image' multiple/>
+		<br><br>
+		<button class="addbtn">Add Food</button>
+	</form>
+	</div>
+</body>
+</html>

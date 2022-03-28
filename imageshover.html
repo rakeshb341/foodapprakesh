@@ -1,0 +1,97 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>image</title>
+    <style>
+        .smore, .weddingdoughnut, .weddingpoptart{
+  position: relative;
+  width: 50%;
+  display: inline;
+  padding-right: 60px;
+  padding-left: 60px;
+}
+.image {
+  display: inline-block;
+  border-radius: 150px;
+  width: 300px;
+  height: 300px;
+}
+#overlayimgs{
+    text-align: center;
+    padding-top: 60px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3b1f1b;
+  border-radius: 150px;
+}
+
+.smore:hover .overlay{
+  opacity: 1;
+}
+.weddingdoughnut:hover .overlay{
+    opacity: 1;
+}
+.weddingpoptart:hover .overlay{
+    opacity: 1;
+}
+.h3text, .h3text2, .h3text3{
+  font-family: "playfair display";
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text, .text2, .text3{
+  font-family: "playfair display";
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+    <section id="overlayimgs">
+            <div class="smore">
+            <img src="9.jpg" alt="Picture of a smore" class="image">
+                <div class="overlay">
+                    <div class="h3text">Perfect Fall S'mores</div>
+                    <div class="text">Pricing is based on 
+                    number of guests. Call us today for your price.</div>
+                </div>
+            </div>
+            
+            <div class="weddingdoughnut">
+            <img src="biryani.jpg" alt="Picture of doughnuts" class="image">
+                <div class="overlay">
+                    <div class="h3text2">Fresh Baked Doughnuts</div>
+                    <div class="text2">Unlimited Flavor and Icing combinations, Minimum order of 2 dozen,
+                        $30.00 for 24</div>
+                </div></div>
+            
+            <div class="weddingpoptart">
+            <img src="./uploads/burger.jpg" alt="Picture of poptarts" class="image">
+                <div class="overlay">
+                    <div class="h3text3">Homemade Poptarts</div>
+                    <div class="text3">Minimum order of 2 dozen, Unlimited flavor options, $25.00 for 24</div>
+                </div></div>
+            </section>
+</body>
+</html>
